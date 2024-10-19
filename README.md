@@ -5,96 +5,67 @@
     <title>Round House Power Wash</title>
     <style>
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: Arial, sans-serif;
             background: #1C1C1C;
             color: #FFD700;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
-            scroll-behavior: smooth;
+            line-height: 1.6;
         }
         header {
             background-color: #000;
             color: #FFD700;
-            padding: 40px;
+            padding: 20px;
             text-align: center;
             border-bottom: 5px solid #FFD700;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
         }
         nav {
-            padding: 20px;
+            padding: 15px;
             background-color: #333;
-            color: #FFD700;
             text-align: center;
             border-bottom: 5px solid #FFD700;
         }
         nav a {
             color: #FFD700;
             text-decoration: none;
-            margin: 0 20px;
+            margin: 0 15px;
             font-weight: bold;
-            transition: color 0.3s;
         }
         nav a:hover {
             color: #FFF;
         }
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: auto;
-            padding: 30px;
+            padding: 20px;
         }
         .hero {
             text-align: center;
-            padding: 80px 20px;
-            background: url('https://images.unsplash.com/photo-1516632664305-e673c5e7257b') center/cover no-repeat;
+            padding: 60px 20px;
+            background-color: #444;
             color: #FFD700;
-            border-radius: 15px;
-            border: 5px solid #FFD700;
-            position: relative;
-            overflow: hidden;
-        }
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-        }
-        .hero h2, .hero p {
-            position: relative;
-            z-index: 1;
-            font-family: 'Montserrat', sans-serif;
+            border-radius: 10px;
+            border: 3px solid #FFD700;
         }
         .content-section {
-            padding: 30px;
+            padding: 20px;
             background-color: #333;
-            border-radius: 15px;
+            border-radius: 10px;
             border: 3px solid #FFD700;
-            margin-bottom: 30px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            margin-bottom: 20px;
         }
         footer {
             text-align: center;
-            padding: 30px;
+            padding: 20px;
             background-color: #000;
             color: #FFD700;
-            position: relative;
             border-top: 5px solid #FFD700;
-            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.6);
-        }
-        .wet-effect {
-            font-family: 'Dancing Script', cursive;
-            text-shadow: 1px 1px 5px rgba(255, 223, 0, 0.5);
-            letter-spacing: 1px;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1 class="wet-effect" style="font-size: 4em;">Round House Power Wash</h1>
+        <h1>Round House Power Wash</h1>
     </header>
     <nav>
         <a href="#about">About Us</a>
@@ -102,8 +73,8 @@
         <a href="#contact">Contact</a>
     </nav>
     <section class="hero">
-        <h2 class="wet-effect">Servicing All of Connecticut</h2>
-        <p class="wet-effect">Professional power washing services for residential and commercial properties. Let us help you keep your property clean and well-maintained.</p>
+        <h2>Servicing All of Connecticut</h2>
+        <p>Professional power washing services for residential and commercial properties. Let us help you keep your property clean and well-maintained.</p>
     </section>
     <div class="container">
         <section id="about" class="content-section">
