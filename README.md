@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,61 +6,89 @@
     <title>Round House Power Wash</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #1C1C1C;
-            color: #FFD700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background: linear-gradient(to bottom, #ffffff, #e6f7ff);
         }
         header {
-            background-color: #000;
-            color: #FFD700;
-            padding: 20px;
+            background-color: #004080;
+            color: #fff;
+            padding: 30px;
             text-align: center;
-            border-bottom: 5px solid #FFD700;
+            font-size: 2.5em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         nav {
-            padding: 15px;
-            background-color: #333;
-            text-align: center;
-            border-bottom: 5px solid #FFD700;
+            display: flex;
+            justify-content: center;
+            background-color: #003366;
+            padding: 15px 0;
         }
         nav a {
-            color: #FFD700;
+            margin: 0 20px;
             text-decoration: none;
-            margin: 0 15px;
+            color: #fff;
             font-weight: bold;
+            transition: color 0.3s;
         }
         nav a:hover {
-            color: #FFF;
-        }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
+            color: #ffcc00;
         }
         .hero {
+            background-color: #003366;
+            color: #fff;
+            padding: 80px 20px;
             text-align: center;
-            padding: 60px 20px;
-            background-color: #444;
-            color: #FFD700;
-            border-radius: 10px;
-            border: 3px solid #FFD700;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
-        .content-section {
-            padding: 20px;
-            background-color: #333;
-            border-radius: 10px;
-            border: 3px solid #FFD700;
+        .hero h2 {
+            font-size: 3em;
             margin-bottom: 20px;
         }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .content-section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #003366;
+            font-size: 2em;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #f0f8ff;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #004080;
+            font-size: 1.2em;
+        }
+        #contact ul {
+            padding-left: 20px;
+        }
         footer {
+            background-color: #004080;
+            color: #fff;
             text-align: center;
             padding: 20px;
-            background-color: #000;
-            color: #FFD700;
-            border-top: 5px solid #FFD700;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer p {
+            margin: 5px;
         }
     </style>
 </head>
@@ -74,25 +103,25 @@
     </nav>
     <section class="hero">
         <h2>Servicing All of Connecticut</h2>
-        <p>Professional power washing services for residential and commercial properties. Let us help you keep your property clean and well-maintained.</p>
+        <p>Professional power washing services to keep your property clean and pristine.</p>
     </section>
     <div class="container">
         <section id="about" class="content-section">
             <h2>About Us</h2>
-            <p>Round House Power Wash offers reliable and high-quality power washing services to both residential and commercial clients. We pride ourselves on delivering excellent results and ensuring customer satisfaction across Connecticut.</p>
+            <p>At Round House Power Wash, we are committed to providing reliable, high-quality power washing services for both residential and commercial properties throughout Connecticut. We take pride in our attention to detail and dedication to customer satisfaction.</p>
         </section>
         <section id="services" class="content-section">
             <h2>Our Services</h2>
             <ul>
                 <li>Residential Pressure Washing</li>
                 <li>Commercial Pressure Washing</li>
-                <li>Deck and Patio Cleaning</li>
-                <li>Driveway and Sidewalk Cleaning</li>
+                <li>Deck & Patio Cleaning</li>
+                <li>Driveway & Sidewalk Cleaning</li>
             </ul>
         </section>
         <section id="contact" class="content-section">
             <h2>Contact Us</h2>
-            <p>Reach out to us today for a free estimate or to schedule your service. We're here to help make your property shine!</p>
+            <p>Contact us today for a free estimate. We’re here to help make your property shine.</p>
             <ul>
                 <li><strong>Phone:</strong> (860) 906-6883</li>
                 <li><strong>Location:</strong> Bristol, CT 06010</li>
