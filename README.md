@@ -11,111 +11,170 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background: linear-gradient(to bottom, #ffffff, #cce7ff);
+            background: linear-gradient(to bottom, #cce7ff, #99ccff);
+            overflow-x: hidden;
         }
         header {
-            background-color: #004080;
+            background-color: #003366;
             color: #fff;
-            padding: 30px;
+            padding: 50px;
             text-align: center;
-            font-size: 2.5em;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 3em;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
             position: relative;
-        }
-        header::after {
-            content: " \1F4A7";
-            position: absolute;
-            right: 20px;
-            top: 20px;
-            font-size: 1.5em;
+            border-bottom: 5px solid #99ccff;
+            border-radius: 0 0 50px 50px;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #003366;
-            padding: 15px 0;
+            background-color: #002244;
+            padding: 20px 0;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
         }
         nav a {
-            margin: 0 20px;
+            margin: 0 25px;
             text-decoration: none;
             color: #fff;
             font-weight: bold;
-            transition: color 0.3s;
+            transition: all 0.3s ease;
+            padding: 10px 15px;
+            border-radius: 10px;
         }
         nav a:hover {
-            color: #ffcc00;
+            color: #99ccff;
+            background-color: #004080;
+            transform: scale(1.1);
         }
         .hero {
-            background-color: #003366;
+            background: linear-gradient(to bottom, #004080, #003366);
             color: #fff;
-            padding: 80px 20px;
+            padding: 100px 20px;
             text-align: center;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            position: relative;
+            border-radius: 0 0 100px 100px;
+            box-shadow: inset 0 -5px 15px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
         }
-        .hero h2 {
-            font-size: 3em;
-            margin-bottom: 20px;
+        .hero::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0) 70%);
+            filter: blur(8px);
         }
-        .hero p::after {
-            content: " \1F4A6";
+        .hero .drips {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 200%;
+            height: 100px;
+            background: repeating-linear-gradient(
+                to bottom,
+                transparent,
+                transparent 5px,
+                rgba(255, 255, 255, 0.3) 5px,
+                rgba(255, 255, 255, 0.3) 10px
+            );
+            transform: translateX(-50%) skewY(5deg);
         }
         .container {
             max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            border: 5px solid #99ccff;
+            position: relative;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0) 70%);
+            filter: blur(8px);
         }
         .content-section {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
         h2 {
             color: #003366;
-            font-size: 2em;
-            border-bottom: 2px solid #004080;
+            font-size: 2.5em;
+            border-bottom: 3px solid #004080;
             padding-bottom: 10px;
+            border-radius: 0 0 15px 15px;
+            position: relative;
+        }
+        h2::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #99ccff, #003366);
+            filter: blur(3px);
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         ul li {
-            background: #f0f8ff;
-            margin: 10px 0;
-            padding: 15px;
-            border-left: 5px solid #004080;
-            font-size: 1.2em;
+            background: #e0f3ff;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 15px;
+            border: 3px solid #004080;
+            font-size: 1.3em;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
             position: relative;
         }
         ul li::before {
-            content: "\1F4A7";
+            content: "";
             position: absolute;
-            left: -30px;
-            top: 15px;
-            font-size: 1.5em;
+            top: -10px;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, #99ccff, transparent);
+            border-radius: 50%;
+            transform: translateX(-50%);
+            filter: blur(5px);
         }
         #contact ul {
             padding-left: 20px;
         }
         footer {
-            background-color: #004080;
+            background-color: #003366;
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             margin-top: 40px;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 50px 50px 0 0;
+            border-top: 5px solid #99ccff;
             position: relative;
         }
-        footer::after {
-            content: "\1F4A6";
+        footer::before {
+            content: "";
             position: absolute;
-            right: 20px;
-            bottom: 20px;
-            font-size: 1.5em;
+            top: -20px;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0) 70%);
+            filter: blur(8px);
         }
         footer p {
-            margin: 5px;
+            margin: 10px;
         }
     </style>
 </head>
@@ -131,6 +190,7 @@
     <section class="hero">
         <h2>Servicing All of Connecticut</h2>
         <p>Professional power washing services to keep your property clean and pristine.</p>
+        <div class="drips"></div>
     </section>
     <div class="container">
         <section id="about" class="content-section">
