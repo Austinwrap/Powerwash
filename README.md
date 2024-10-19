@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background: linear-gradient(to bottom, #ffffff, #e6f7ff);
+            background: linear-gradient(to bottom, #ffffff, #cce7ff);
         }
         header {
             background-color: #004080;
@@ -20,6 +20,14 @@
             text-align: center;
             font-size: 2.5em;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        header::after {
+            content: " \1F4A7";
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 1.5em;
         }
         nav {
             display: flex;
@@ -48,6 +56,9 @@
             font-size: 3em;
             margin-bottom: 20px;
         }
+        .hero p::after {
+            content: " \1F4A6";
+        }
         .container {
             max-width: 900px;
             margin: 20px auto;
@@ -75,6 +86,14 @@
             padding: 15px;
             border-left: 5px solid #004080;
             font-size: 1.2em;
+            position: relative;
+        }
+        ul li::before {
+            content: "\1F4A7";
+            position: absolute;
+            left: -30px;
+            top: 15px;
+            font-size: 1.5em;
         }
         #contact ul {
             padding-left: 20px;
@@ -86,6 +105,14 @@
             padding: 20px;
             margin-top: 40px;
             box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        footer::after {
+            content: "\1F4A6";
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            font-size: 1.5em;
         }
         footer p {
             margin: 5px;
